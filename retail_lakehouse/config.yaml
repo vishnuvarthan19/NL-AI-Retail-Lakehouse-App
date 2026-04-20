@@ -1,0 +1,11 @@
+cbs:
+  table_id: "85828ENG"
+  endpoint:
+    - "TypedDataSet"
+    - "DataProperties"
+    - "Branches"
+    - "Periods"
+
+agent:
+  model: "qwen2.5-coder:7b"
+  max_retries: 3

@@ -1,0 +1,656 @@
+[
+    {
+        "Key": "354200 ",
+        "Title": "G Wholesale and retail trade",
+        "Description": "Wholesale and retail trade; repair of motor vehicles and motorcycles",
+        "CategoryGroupID": 1
+    },
+    {
+        "Key": "354300 ",
+        "Title": "45 Sale and repair of motor vehicles",
+        "Description": "Sale and repair of motor vehicles, motorcycles and trailers",
+        "CategoryGroupID": 4
+    },
+    {
+        "Key": "354400 ",
+        "Title": "451 Sale and repair of motor vehicles",
+        "Description": "Sale of motor vehicles and trailers, also if combined with repair",
+        "CategoryGroupID": 13
+    },
+    {
+        "Key": "354600 ",
+        "Title": "45111 Import of new passenger cars",
+        "Description": "Import of new passenger cars and light motor vehicles",
+        "CategoryGroupID": 37
+    },
+    {
+        "Key": "354700 ",
+        "Title": "45112 Sale of passenger cars, no import",
+        "Description": "Sale and repair of passenger cars and light motor vehicles (no import of new cars)",
+        "CategoryGroupID": 37
+    },
+    {
+        "Key": "354800 ",
+        "Title": "4519 Sale and repair of trucks, trailers",
+        "Description": "Sale and repair of trucks, trailers and caravans",
+        "CategoryGroupID": 28
+    },
+    {
+        "Key": "355300 ",
+        "Title": "452 Specialised repair of motor vehicles",
+        "Description": "Specialised repair of motor vehicles",
+        "CategoryGroupID": 13
+    },
+    {
+        "Key": "356000 ",
+        "Title": "453 Sale of motor vehicle parts.",
+        "Description": "Sale of motor vehicle parts and accessories",
+        "CategoryGroupID": 13
+    },
+    {
+        "Key": "356500 ",
+        "Title": "454 Sale and repair of motorcycles",
+        "Description": "Sale and repair of motorcycles and related parts",
+        "CategoryGroupID": 13
+    },
+    {
+        "Key": "356900 ",
+        "Title": "46 Wholesale trade (no motor vehicles)",
+        "Description": "Wholesale trade (no motor vehicles and motorcycles)",
+        "CategoryGroupID": 4
+    },
+    {
+        "Key": "358000 ",
+        "Title": "462 Wholesale of agricultural products",
+        "Description": "Wholesale of agricultural products and live animals",
+        "CategoryGroupID": 14
+    },
+    {
+        "Key": "359800 ",
+        "Title": "463 Wholesale of food and beverages",
+        "Description": "Wholesale of food and beverages",
+        "CategoryGroupID": 14
+    },
+    {
+        "Key": "361700 ",
+        "Title": "464 Wholesale of consumergoods",
+        "Description": "Wholesale of consumergoods (no food)",
+        "CategoryGroupID": 14
+    },
+    {
+        "Key": "365700 ",
+        "Title": "465 Wholesale of ICT-equipment",
+        "Description": "Wholesale of information and communication equipment",
+        "CategoryGroupID": 14
+    },
+    {
+        "Key": "366000 ",
+        "Title": "466 Wholesale of other machinery",
+        "Description": "Wholesale of other machines, equipment and supplies for manufacturing and trade",
+        "CategoryGroupID": 14
+    },
+    {
+        "Key": "367900 ",
+        "Title": "467 Other specialised wholesale",
+        "Description": "Other specialised wholesale",
+        "CategoryGroupID": 14
+    },
+    {
+        "Key": "371600 ",
+        "Title": "47 Retail trade (not in motor vehicles)",
+        "Description": "Retail trade (not in motor vehicles)",
+        "CategoryGroupID": 4
+    },
+    {
+        "Key": "371700 ",
+        "Title": "471 Non-specialised retail sales.",
+        "Description": "Retail sale in non-specialised stores",
+        "CategoryGroupID": 15
+    },
+    {
+        "Key": "371800 ",
+        "Title": "4711 Supermarkets and similar stores",
+        "Description": "Supermarkets, department stores and similar non-specialised stores",
+        "CategoryGroupID": 29
+    },
+    {
+        "Key": "372200 ",
+        "Title": "472 Specialised shops selling food",
+        "Description": "Specialised shops selling food and beverages",
+        "CategoryGroupID": 15
+    },
+    {
+        "Key": "374000 ",
+        "Title": "474 Shops selling consumer electronics",
+        "Description": "Shops selling consumer electronics",
+        "CategoryGroupID": 15
+    },
+    {
+        "Key": "374600 ",
+        "Title": "475 Shops for other household equipment",
+        "Description": "Shops selling other household equipment",
+        "CategoryGroupID": 15
+    },
+    {
+        "Key": "900154 ",
+        "Title": "Shops for furniture, home furnishings",
+        "Description": "Shops selling furniture and furnishings. \r\nThis category combines categories: \r\n4759.1 shops selling furniture \r\n4759.2 Shops for articles for lighting \r\n4759.3 shops selling various home furnishings.",
+        "CategoryGroupID": 41
+    },
+    {
+        "Key": "375100 ",
+        "Title": "4752 Shops for do-it-yourself articles",
+        "Description": "Shops selling do-it-yourself articles",
+        "CategoryGroupID": 29
+    },
+    {
+        "Key": "375900 ",
+        "Title": "47528 Builder's merchants",
+        "Description": "Builder's merchants and other shops selling various building materials",
+        "CategoryGroupID": 38
+    },
+    {
+        "Key": "376600 ",
+        "Title": "4759 Shops for other household articles",
+        "Description": "Shops selling furniture, articles for lighting and other household articles n.e.c.",
+        "CategoryGroupID": 29
+    },
+    {
+        "Key": "377400 ",
+        "Title": "476 Shops selling recreation goods",
+        "Description": "Shops selling reading, sports, camping and recreation goods",
+        "CategoryGroupID": 15
+    },
+    {
+        "Key": "378400 ",
+        "Title": "477 Shops selling other goods",
+        "Description": "Shops selling other goods",
+        "CategoryGroupID": 15
+    },
+    {
+        "Key": "378500 ",
+        "Title": "4771 Shops selling clothing",
+        "Description": "Shops selling clothes and clothing accessories: textile supermarkets",
+        "CategoryGroupID": 29
+    },
+    {
+        "Key": "379400 ",
+        "Title": "4772 Shops for footwear, leather goods",
+        "Description": "Shops selling footwear and leather goods",
+        "CategoryGroupID": 29
+    },
+    {
+        "Key": "379900 ",
+        "Title": "47741 Drugstores",
+        "Description": "Drugstores",
+        "CategoryGroupID": 38
+    },
+    {
+        "Key": "382500 ",
+        "Title": "479 Retail sale not via store or market",
+        "Description": "Retail sale not via stores and markets",
+        "CategoryGroupID": 15
+    },
+    {
+        "Key": "382600 ",
+        "Title": "4791 Retail sale via internet",
+        "Description": "Retail sale via internet",
+        "CategoryGroupID": 29
+    },
+    {
+        "Key": "383100 ",
+        "Title": "H Transportation and storage",
+        "Description": "Transportation and storage",
+        "CategoryGroupID": 1
+    },
+    {
+        "Key": "383200 ",
+        "Title": "49 Land transport",
+        "Description": "Land transport",
+        "CategoryGroupID": 5
+    },
+    {
+        "Key": "900054 ",
+        "Title": "491-492 Rail transport",
+        "Description": "Rail transport \r\nThis category is made up of the categories: \r\n491 Passenger rail transport (no tram or metro) \r\n492 Freight rail transport",
+        "CategoryGroupID": 26
+    },
+    {
+        "Key": "383700 ",
+        "Title": "493 Passenger transport by road",
+        "Description": "Passenger transport by road",
+        "CategoryGroupID": 16
+    },
+    {
+        "Key": "383900 ",
+        "Title": "4932 Taxi operation",
+        "Description": "Taxi operation",
+        "CategoryGroupID": 30
+    },
+    {
+        "Key": "384000 ",
+        "Title": "4939 Other passenger transport by road",
+        "Description": "Other passenger transport by road",
+        "CategoryGroupID": 30
+    },
+    {
+        "Key": "384400 ",
+        "Title": "494 Freight transport by road",
+        "Description": "Freight transport by road",
+        "CategoryGroupID": 16
+    },
+    {
+        "Key": "384500 ",
+        "Title": "4941 Freight road transport, no removals",
+        "Description": "Freight transport by road (no removal services)",
+        "CategoryGroupID": 30
+    },
+    {
+        "Key": "384600 ",
+        "Title": "4942 Removal services",
+        "Description": "Removal services",
+        "CategoryGroupID": 30
+    },
+    {
+        "Key": "384900 ",
+        "Title": "50 Water transport",
+        "Description": "Water transport",
+        "CategoryGroupID": 5
+    },
+    {
+        "Key": "384905 ",
+        "Title": "501-502 Sea water transport",
+        "Description": "Sea water transport \r\nThis category is made up of the categories: \r\n501 Sea passenger water transport \r\n502 Sea freight water transport",
+        "CategoryGroupID": 26
+    },
+    {
+        "Key": "385705 ",
+        "Title": "503-504 Inland water transport",
+        "Description": "Inland water transport \r\nThis category is made up of the categories: \r\n503 Inland passenger water transport and ferry-services \r\n504 Inland freight water transport",
+        "CategoryGroupID": 26
+    },
+    {
+        "Key": "386300 ",
+        "Title": "51 Air transport",
+        "Description": "Air transport \r\nThis division includes: \r\n- the transport of passengers or freight by air.",
+        "CategoryGroupID": 5
+    },
+    {
+        "Key": "386800 ",
+        "Title": "52 Warehousing, services for transport",
+        "Description": "Warehousing and support activities for transportation",
+        "CategoryGroupID": 5
+    },
+    {
+        "Key": "386900 ",
+        "Title": "521 Warehousing and storage",
+        "Description": "Warehousing and storage",
+        "CategoryGroupID": 17
+    },
+    {
+        "Key": "387400 ",
+        "Title": "522 Services activities for transport",
+        "Description": "Support activities for transport",
+        "CategoryGroupID": 17
+    },
+    {
+        "Key": "387500 ",
+        "Title": "5221 Services for land transport",
+        "Description": "Support activities for land transport",
+        "CategoryGroupID": 31
+    },
+    {
+        "Key": "387600 ",
+        "Title": "5222 Services for water transport",
+        "Description": "Support activities for water transport",
+        "CategoryGroupID": 31
+    },
+    {
+        "Key": "387700 ",
+        "Title": "5223 Services for air transport",
+        "Description": "Support activities for air transport",
+        "CategoryGroupID": 31
+    },
+    {
+        "Key": "387800 ",
+        "Title": "5224 Cargo handling",
+        "Description": "Cargo handling",
+        "CategoryGroupID": 31
+    },
+    {
+        "Key": "388100 ",
+        "Title": "5229 Agents for transport and weighing",
+        "Description": "Forwarding agencies, ship brokers and charterers; weighing and measuring",
+        "CategoryGroupID": 31
+    },
+    {
+        "Key": "388400 ",
+        "Title": "53 Postal and courier activities",
+        "Description": "Postal and courier activities",
+        "CategoryGroupID": 5
+    },
+    {
+        "Key": "389100 ",
+        "Title": "I Accommodation and food serving",
+        "Description": "Accommodation and food service activities",
+        "CategoryGroupID": 1
+    },
+    {
+        "Key": "389105 ",
+        "Title": "Hotels, restaurants and bars",
+        "Description": "Hotels, restaurants and bars \r\n551 Hotels and similar accommodation \r\n561 Renting of holiday bungalows and apartments; youth hostels and tourist camps \r\n563 Bars",
+        "CategoryGroupID": 26
+    },
+    {
+        "Key": "389200 ",
+        "Title": "55 Accommodation",
+        "Description": "Accommodation",
+        "CategoryGroupID": 6
+    },
+    {
+        "Key": "389300 ",
+        "Title": "551 Hotels and similar accommodation",
+        "Description": "Hotels and similar accommodation",
+        "CategoryGroupID": 18
+    },
+    {
+        "Key": "390500 ",
+        "Title": "56 Food and beverage service activities",
+        "Description": "Food and beverage service activities",
+        "CategoryGroupID": 6
+    },
+    {
+        "Key": "390600 ",
+        "Title": "561 Restaurants",
+        "Description": "Restaurants",
+        "CategoryGroupID": 19
+    },
+    {
+        "Key": "390800 ",
+        "Title": "56101 Restaurants",
+        "Description": "Restaurants",
+        "CategoryGroupID": 39
+    },
+    {
+        "Key": "390905 ",
+        "Title": "56102 Fastfood, ice-cream parlours",
+        "Description": "Fast-food restaurants, cafeterias, ice cream parlours, take-out eating places etc.",
+        "CategoryGroupID": 39
+    },
+    {
+        "Key": "391100 ",
+        "Title": "562 Canteens and catering",
+        "Description": "Canteens and catering",
+        "CategoryGroupID": 19
+    },
+    {
+        "Key": "391400 ",
+        "Title": "563 Bars",
+        "Description": "Bars",
+        "CategoryGroupID": 19
+    },
+    {
+        "Key": "391600 ",
+        "Title": "J Information and communication",
+        "Description": "Information and communication",
+        "CategoryGroupID": 1
+    },
+    {
+        "Key": "391700 ",
+        "Title": "58 Publishing",
+        "Description": "Publishing",
+        "CategoryGroupID": 7
+    },
+    {
+        "Key": "392600 ",
+        "Title": "59 Film, TV and music production etc",
+        "Description": "Motion picture and television programme production and distribution; sound recording and music publishing",
+        "CategoryGroupID": 7
+    },
+    {
+        "Key": "393300 ",
+        "Title": "5914 Cinemas",
+        "Description": "Cinemas",
+        "CategoryGroupID": 32
+    },
+    {
+        "Key": "393600 ",
+        "Title": "60 Programming and broadcasting",
+        "Description": "Programming and broadcasting",
+        "CategoryGroupID": 7
+    },
+    {
+        "Key": "394100 ",
+        "Title": "61 Telecommunications",
+        "Description": "Telecommunications",
+        "CategoryGroupID": 7
+    },
+    {
+        "Key": "395000 ",
+        "Title": "62 Support activities in the field of IT",
+        "Description": "Support activities in the field of information technology",
+        "CategoryGroupID": 7
+    },
+    {
+        "Key": "395600 ",
+        "Title": "63 Information service activities",
+        "Description": "Information service activities",
+        "CategoryGroupID": 7
+    },
+    {
+        "Key": "395700 ",
+        "Title": "631 Data processing, hosting, portals",
+        "Description": "Data processing, hosting and related activities; web portals",
+        "CategoryGroupID": 20
+    },
+    {
+        "Key": "402000 ",
+        "Title": "L Renting, buying, selling real estate",
+        "Description": "Renting, buying and selling of real estate",
+        "CategoryGroupID": 1
+    },
+    {
+        "Key": "402100 ",
+        "Title": "68 Renting, buying, selling real estate",
+        "Description": "Renting and buying and selling of real estate",
+        "CategoryGroupID": 8
+    },
+    {
+        "Key": "300010 ",
+        "Title": "M-N Business services",
+        "Description": "Business services \r\nThis category is made up of the categories: \r\nM Consultancy, research and other specialised business services \r\nN Renting and leasing of tangible goods and other business support services",
+        "CategoryGroupID": 2
+    },
+    {
+        "Key": "403400 ",
+        "Title": "69 Legal services, administration etc.",
+        "Description": "Legal services, accounting, tax consultancy, administration",
+        "CategoryGroupID": 9
+    },
+    {
+        "Key": "403500 ",
+        "Title": "691 Legal activities",
+        "Description": "Legal activities",
+        "CategoryGroupID": 21
+    },
+    {
+        "Key": "404200 ",
+        "Title": "692 Accounting, administration etc.",
+        "Description": "Accounting, tax consultancy, administration",
+        "CategoryGroupID": 21
+    },
+    {
+        "Key": "405400 ",
+        "Title": "702 Management and business consultancy",
+        "Description": "Management and business consultancy",
+        "CategoryGroupID": 22
+    },
+    {
+        "Key": "405900 ",
+        "Title": "71 Architects, technical services etc.",
+        "Description": "Architects, engineers and technical design and consultancy; testing and analysis",
+        "CategoryGroupID": 9
+    },
+    {
+        "Key": "406100 ",
+        "Title": "7111 Architects",
+        "Description": "Architects",
+        "CategoryGroupID": 33
+    },
+    {
+        "Key": "406200 ",
+        "Title": "7112 Engineers and technical consultancy",
+        "Description": "Engineers and other technical design and consultancy",
+        "CategoryGroupID": 33
+    },
+    {
+        "Key": "406300 ",
+        "Title": "712 Technical testing and analysis",
+        "Description": "Technical testing and analysis",
+        "CategoryGroupID": 23
+    },
+    {
+        "Key": "408100 ",
+        "Title": "73 Advertising and market research",
+        "Description": "Advertising and market research",
+        "CategoryGroupID": 9
+    },
+    {
+        "Key": "408200 ",
+        "Title": "731 Advertising",
+        "Description": "Advertising agencies and sale of time and space for advertising",
+        "CategoryGroupID": 24
+    },
+    {
+        "Key": "408500 ",
+        "Title": "732 Market research and opinion polling",
+        "Description": "Market research and public opinion polling",
+        "CategoryGroupID": 24
+    },
+    {
+        "Key": "408700 ",
+        "Title": "74 Other specialised business services",
+        "Description": "Industrial design, photography, translation and other consultancy",
+        "CategoryGroupID": 9
+    },
+    {
+        "Key": "410200 ",
+        "Title": "N Renting and other business support",
+        "Description": "Renting and leasing of tangible goods and other business support services",
+        "CategoryGroupID": 1
+    },
+    {
+        "Key": "410300 ",
+        "Title": "77 Renting and leasing of tangible goods",
+        "Description": "Renting and leasing of motor vehicles, consumergoods, machines and other tangible goods",
+        "CategoryGroupID": 10
+    },
+    {
+        "Key": "412700 ",
+        "Title": "78 Employment activities",
+        "Description": "Employment placement, provision of temporary employment and payrolling",
+        "CategoryGroupID": 10
+    },
+    {
+        "Key": "413700 ",
+        "Title": "79 Travel agencies, tour operators etc",
+        "Description": "Travel agencies, tour operators, tourist information and reservation services",
+        "CategoryGroupID": 10
+    },
+    {
+        "Key": "414300 ",
+        "Title": "80 Security and investigation",
+        "Description": "Security and investigation",
+        "CategoryGroupID": 10
+    },
+    {
+        "Key": "415000 ",
+        "Title": "81 Cleaning activities, gardening etc.",
+        "Description": "Facility management, cleaning activities, gardening etc.",
+        "CategoryGroupID": 10
+    },
+    {
+        "Key": "415100 ",
+        "Title": "811 Facility management",
+        "Description": "Facility management",
+        "CategoryGroupID": 25
+    },
+    {
+        "Key": "415300 ",
+        "Title": "812 Cleaning activities",
+        "Description": "Cleaning activities",
+        "CategoryGroupID": 25
+    },
+    {
+        "Key": "415400 ",
+        "Title": "8121 General cleaning of buildings",
+        "Description": "General cleaning of buildings",
+        "CategoryGroupID": 34
+    },
+    {
+        "Key": "415700 ",
+        "Title": "813 Landscape service activities",
+        "Description": "Landscape service activities",
+        "CategoryGroupID": 25
+    },
+    {
+        "Key": "415900 ",
+        "Title": "82 Other business services",
+        "Description": "Other business services",
+        "CategoryGroupID": 10
+    },
+    {
+        "Key": "437500 ",
+        "Title": "95 Repair computers and consumergoods",
+        "Description": "Repair of computers and consumergoods",
+        "CategoryGroupID": 11
+    },
+    {
+        "Key": "439200 ",
+        "Title": "9602 Hairdressing and beauty treatment",
+        "Description": "Hairdressing and beauty treatment",
+        "CategoryGroupID": 35
+    },
+    {
+        "Key": "439300 ",
+        "Title": "96021 Hairdressing",
+        "Description": "Hairdressing",
+        "CategoryGroupID": 40
+    },
+    {
+        "Key": "439400 ",
+        "Title": "96022 Beauty treatment and pedicures",
+        "Description": "Beauty treatment, pedicures and manicures, make-up and image consulting",
+        "CategoryGroupID": 40
+    },
+    {
+        "Key": "900051 ",
+        "Title": "4711, 472 Shops in food",
+        "Description": null,
+        "CategoryGroupID": 43
+    },
+    {
+        "Key": "B000657",
+        "Title": "Retail trade (no motor veh., petrol)",
+        "Description": null,
+        "CategoryGroupID": 43
+    },
+    {
+        "Key": "B000658",
+        "Title": "Shops in non-food and no-store retail",
+        "Description": null,
+        "CategoryGroupID": 43
+    },
+    {
+        "Key": "403300 ",
+        "Title": "M Other specialised business services",
+        "Description": null,
+        "CategoryGroupID": 1
+    },
+    {
+        "Key": "B000655",
+        "Title": "H+I+J+L+M+N Total services",
+        "Description": null,
+        "CategoryGroupID": 43
+    }
+]

@@ -1,0 +1,11 @@
+# Data
+src/retail_lakehouse/data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Poetry
+poetry.lock

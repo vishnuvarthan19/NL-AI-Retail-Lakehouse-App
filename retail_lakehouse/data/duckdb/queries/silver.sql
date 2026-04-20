@@ -1,0 +1,35 @@
+CREATE OR REPLACE TABLE {layer}_{table} AS
+SELECT
+    t.ID,
+    t.Branches,
+    b.Title           AS branch_title,
+    b.Description     AS branch_description,
+    b.CategoryGroupID AS branch_category_group_id,
+    t.Periods,
+    p.Title           AS period_title,
+    p.Description     AS period_description,
+    p.Status          AS period_status,
+    t.UncorrectedProductionTurnover_1,
+    t.CalendarAdjustedProductionTurnover_2,
+    t.SeasonallyAdjustedProductionTurnover_3,
+    t.UncorrectedProductionTurnover_4,
+    t.CalendarAdjustedProductionTurnover_5,
+    t.UncorrectedProductionTurnover_6,
+    t.SeasonallyAdjustedProductionTurnover_7,
+    t.UncorrectedProductionTurnover_8,
+    t.CalendarAdjustedProductionTurnover_9,
+    t.SeasonallyAdjustedProductionTurnover_10,
+    t.UncorrectedProductionTurnover_11,
+    t.CalendarAdjustedProductionTurnover_12,
+    t.UncorrectedProductionTurnover_13,
+    t.SeasonallyAdjustedProductionTurnover_14,
+    t.UncorrectedProductionTurnover_15,
+    t.CalendarAdjustedProductionTurnover_16,
+    t.SeasonallyAdjustedProductionTurnover_17,
+    t.UncorrectedProductionTurnover_18,
+    t.CalendarAdjustedProductionTurnover_19,
+    t.UncorrectedProductionTurnover_20,
+    t.SeasonallyAdjustedProductionTurnover_21
+FROM raw_TypedDataSet t
+JOIN raw_Periods  p ON t.Periods  = p.Key
+JOIN raw_Branches b ON t.Branches = b.Key
