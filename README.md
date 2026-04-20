@@ -18,12 +18,12 @@ A natural-language analytics app for Dutch retail trade statistics. It fetches l
 | Component | Minimum | Recommended |
 |-----------|---------|-------------|
 | Python | 3.14 | 3.14+ |
-| RAM | 4 GB | 8 GB (model runs in memory) |
-| Disk space | 2 GB | 4 GB (Ollama model ~4 GB) |
+| RAM | 8 GB | 16 GB (model runs in memory) |
+| Disk space | 6 GB | 10 GB (Ollama model ~4 GB) |
 | OS | macOS / Linux | macOS / Linux |
 | Ollama | installed + server running | latest |
 
-> The `qwen2.5-coder:7b` model requires ~4 GB of disk and loads ~4–5 GB into RAM at runtime.
+> The `qwen2.5-coder:7b` model requires ~6 GB of disk and loads ~4–5 GB into RAM at runtime.
 
 ---
 
@@ -32,13 +32,13 @@ A natural-language analytics app for Dutch retail trade statistics. It fetches l
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                        Streamlit UI (app.py)                    │
-│              Natural Language Input / Results Table             │
+│   Natural Language Input(User Question) / Results Table         │
 └────────────────────────┬────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                    RetailAgent (core/agent.py)                  │
-│        NL question → Ollama (qwen2.5-coder:7b) → SQL           │
+│        Retail Related question → Ollama (qwen2.5-coder:7b) → SQL│
 │              Self-corrects on error (max 3 retries)             │
 └────────────────────────┬────────────────────────────────────────┘
                          │ DuckDB query
@@ -128,7 +128,7 @@ NL-AI-Retail-Lakehouse-App/
 
 ```bash
 # Clone the repo
-git clone <repo-url>
+git clone https://github.com/vishnuvarthan19/NL-AI-Retail-Lakehouse-App.git
 cd NL-AI-Retail-Lakehouse-App
 
 # Run setup (installs Poetry if missing, pulls model, launches app)
