@@ -1,5 +1,6 @@
 # Data
-src/retail_lakehouse/data/
+retail_lakehouse/data/*.json
+retail_lakehouse/data/duckdb/lakehouse.duckdb
 
 # Python
 __pycache__/
