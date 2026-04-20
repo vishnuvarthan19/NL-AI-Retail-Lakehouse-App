@@ -31,41 +31,6 @@ A natural-language analytics app for Dutch retail trade statistics. It fetches l
 
 ![Architecture Diagram](architecture.png)
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        Streamlit UI (app.py)                    │
-│   Natural Language Input(User Question) / Results Table         │
-└────────────────────────┬────────────────────────────────────────┘
-                         │
-                         ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    RetailAgent (core/agent.py)                  │
-│        Retail Related question → Ollama (qwen2.5-coder:7b) → SQL│
-│              Self-corrects on error (max 3 retries)             │
-└────────────────────────┬────────────────────────────────────────┘
-                         │ DuckDB query
-                         ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    lakehouse.duckdb                             │
-│                                                                 │
-│  ┌─────────────┐   ┌──────────────┐   ┌──────────────────────┐ │
-│  │  RAW layer  │──▶│ SILVER layer │──▶│     GOLD layer       │ │
-│  │             │   │              │   │                      │ │
-│  │raw_TypedData│   │silver_retail │   │gold_retail           │ │
-│  │raw_Branches │   │              │   │                      │ │
-│  │raw_Periods  │   │ Joins all    │   │ Clean column names   │ │
-│  │raw_DataProps│   │ raw tables   │   │ Parsed dates         │ │
-│  │             │   │ + col docs   │   │ Indexed for speed    │ │
-│  └──────┬──────┘   └──────────────┘   └──────────────────────┘ │
-└─────────┼───────────────────────────────────────────────────────┘
-          │ JSON files
-          ▼
-┌─────────────────────────────────────────────────────────────────┐
-│              CBS OData API (opendata.cbs.nl)                    │
-│                  Table 85828ENG                                 │
-│     TypedDataSet / Branches / Periods / DataProperties          │
-└─────────────────────────────────────────────────────────────────┘
-```
 
 ### Layer Details
 
