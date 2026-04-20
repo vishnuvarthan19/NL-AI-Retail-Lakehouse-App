@@ -29,6 +29,8 @@ A natural-language analytics app for Dutch retail trade statistics. It fetches l
 
 ## Architecture
 
+![Architecture Diagram](architecture.png)
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                        Streamlit UI (app.py)                    │
