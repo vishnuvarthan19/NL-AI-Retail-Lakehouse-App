@@ -6,7 +6,7 @@
 NL-AI-Retail-Lakehouse-App/
 ├── retail_lakehouse/
 │   ├── __init__.py
-│   ├── cbs_to_lakehouse.py   # Orchestrator: ingestion -> raw -> silver -> gold
+│   ├── cbs_to_lakehouse.py   # Orchestrator: ingestion -> bronze -> silver -> gold
 │   ├── config.yaml           # CBS table_id and endpoint config
 │   ├── app/
 │   │   └── app.py            # Streamlit UI: chat interface + pipeline trigger
@@ -21,12 +21,12 @@ NL-AI-Retail-Lakehouse-App/
 │   │   └── duckdb/
 │   │       ├── lakehouse.duckdb  # Single DuckDB file for all layers
 │   │       └── queries/
-│   │           ├── raw.sql       # Loads JSON -> raw_{table} tables
-│   │           ├── silver.sql    # Joins raw tables -> silver_retail
+│   │           ├── bronze.sql       # Loads JSON -> bronze_{table} tables
+│   │           ├── silver.sql    # Joins bronze tables -> silver_retail
 │   │           └── gold.sql      # Aggregates silver -> gold layer
 │   ├── database/
 │   │   ├── __init__.py
-│   │   └── database.py       # DuckDB: load_layer, run_duckdb_raw, run_duckdb_silver, run_duckdb_gold
+│   │   └── database.py       # DuckDB: load_layer, run_duckdb_bronze, run_duckdb_silver, run_duckdb_gold
 │   └── ingestion/
 │       ├── __init__.py
 │       └── cbs_api_extract.py # OData API fetch + save JSON (Table 85828ENG)
@@ -38,12 +38,12 @@ NL-AI-Retail-Lakehouse-App/
 
 ## Architecture
 
-- All layers (raw, silver, gold) live in a single `lakehouse.duckdb` file.
-- Table naming convention: `{layer}_{table}` (e.g. `raw_TypedDataSet`, `silver_retail`, `gold_retail`).
+- All layers (bronze, silver, gold) live in a single `lakehouse.duckdb` file.
+- Table naming convention: `{layer}_{table}` (e.g. `bronze_TypedDataSet`, `silver_retail`, `gold_retail`).
 - SQL for each layer lives in `data/duckdb/queries/{layer}.sql`.
 - `load_layer(table, layer, query)` in `database.py` is the single entry point for writing any layer.
-- `run_duckdb_raw()` — loads all CBS JSON files into raw layer tables.
-- `run_duckdb_silver()` — joins raw tables into `silver_retail`.
+- `run_duckdb_bronze()` — loads all CBS JSON files into bronze layer tables.
+- `run_duckdb_silver()` — joins bronze tables into `silver_retail`.
 - `run_duckdb_gold()` — aggregates silver into `gold_retail`.
 - `RetailAgent` in `core/agent.py` — translates natural language queries to DuckDB SQL via Ollama.
 - `app/app.py` — Streamlit UI with chat interface and pipeline trigger.

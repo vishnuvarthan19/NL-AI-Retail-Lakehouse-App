@@ -1,6 +1,6 @@
 # NL-AI Retail Lakehouse App
 
-A natural-language analytics app for Dutch retail trade statistics. It fetches live data from the CBS (Statistics Netherlands) OData API, stores it in a local DuckDB lakehouse (raw → silver → gold), and lets you query it in plain English via an Ollama-powered AI agent inside a Streamlit UI.
+A natural-language analytics app for Dutch retail trade statistics. It fetches live data from the CBS (Statistics Netherlands) OData API, stores it in a local DuckDB lakehouse (bronze → silver → gold), and lets you query it in plain English via an Ollama-powered AI agent inside a Streamlit UI.
 
 ---
 
@@ -36,10 +36,10 @@ A natural-language analytics app for Dutch retail trade statistics. It fetches l
 
 | Layer | Table | Description |
 |-------|-------|-------------|
-| Raw | `raw_TypedDataSet` | Raw turnover records from CBS |
-| Raw | `raw_Branches` | Industry/branch lookup |
-| Raw | `raw_Periods` | Time period lookup |
-| Raw | `raw_DataProperties` | Column metadata / descriptions |
+| bronze | `bronze_TypedDataSet` | bronze turnover records from CBS |
+| bronze | `bronze_Branches` | Industry/branch lookup |
+| bronze | `bronze_Periods` | Time period lookup |
+| bronze | `bronze_DataProperties` | Column metadata / descriptions |
 | Silver | `silver_retail` | Joined dataset with human-readable branch/period names and column comments |
 | Gold | `gold_retail` | Analytics-ready: clean column names, parsed `observation_date`, indexed on date and industry |
 
@@ -51,7 +51,7 @@ A natural-language analytics app for Dutch retail trade statistics. It fetches l
 NL-AI-Retail-Lakehouse-App/
 ├── retail_lakehouse/
 │   ├── __init__.py
-│   ├── cbs_to_lakehouse.py   # Orchestrator: ingestion -> raw -> silver -> gold
+│   ├── cbs_to_lakehouse.py   # Orchestrator: ingestion -> bronze -> silver -> gold
 │   ├── config.yaml           # CBS table_id and endpoint config
 │   ├── app/
 │   │   └── app.py            # Streamlit UI: chat interface + pipeline trigger
@@ -66,7 +66,7 @@ NL-AI-Retail-Lakehouse-App/
 │   │   └── duckdb/
 │   │       ├── lakehouse.duckdb
 │   │       └── queries/
-│   │           ├── raw.sql
+│   │           ├── bronze.sql
 │   │           ├── silver.sql
 │   │           └── gold.sql
 │   ├── database/
@@ -104,7 +104,7 @@ cd NL-AI-Retail-Lakehouse-App
 
 On first launch the app will:
 1. Fetch all CBS retail data from the API
-2. Build the raw, silver, and gold layers in DuckDB
+2. Build the bronze, silver, and gold layers in DuckDB
 3. Open the chat UI in your browser
 
 ---

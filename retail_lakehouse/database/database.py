@@ -49,16 +49,16 @@ def _load_query(layer: str) -> str:
     return query_path.read_text()
 
 
-def run_duckdb_raw() -> None:
+def run_duckdb_bronze() -> None:
     tables = _load_tables()
-    query = _load_query("raw")
+    query = _load_query("bronze")
     db = DuckDB()
-    logger.info("Building Raw Retail Layer")
+    logger.info("Building bronze Retail Layer")
     for table in tables:
         logger.info("Loading %s", table)
-        db.load_layer(table, "raw", query)
+        db.load_layer(table, "bronze", query)
         logger.info("[%s] done", table)
-    logger.info("Building Raw Retail Layer Completed")
+    logger.info("Building bronze Retail Layer Completed")
 
 
 def run_duckdb_silver() -> None:
@@ -66,7 +66,7 @@ def run_duckdb_silver() -> None:
     db = DuckDB()
     logger.info("Building Silver Retail Layer")
     db.load_layer("retail", "silver", query)
-    db.apply_column_comments("silver_retail", "raw_DataProperties")
+    db.apply_column_comments("silver_retail", "bronze_DataProperties")
     logger.info("Building Silver Retail Layer Completed")
 
 
@@ -80,6 +80,6 @@ def run_duckdb_gold() -> None:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    run_duckdb_raw()
+    run_duckdb_bronze()
     run_duckdb_silver()
     run_duckdb_gold()
